@@ -1,0 +1,8 @@
+[class*="button"] {
+  background: lightgrey;
+  color: black;
+  padding: 2px 5px;
+  border-radius: 6px;
+  margin: 0.25em 0.25em;
+  max-width: 90%;
+}

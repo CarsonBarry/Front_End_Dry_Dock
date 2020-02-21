@@ -1,0 +1,19 @@
+.hidden {
+  /*
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+  */
+  visibility: collapse;
+  display: none;
+}
+
+.hided {
+  /*
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+  */
+  height: 0px;
+  width: 0px;
+}

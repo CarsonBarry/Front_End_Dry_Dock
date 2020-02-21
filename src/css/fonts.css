@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "DIN";
+  src: url("//db.onlinewebfonts.com/t/bb5187563d27905199c81b1bb87f7c45.eot");
+  src: url("//db.onlinewebfonts.com/t/bb5187563d27905199c81b1bb87f7c45.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/bb5187563d27905199c81b1bb87f7c45.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/bb5187563d27905199c81b1bb87f7c45.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/bb5187563d27905199c81b1bb87f7c45.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/bb5187563d27905199c81b1bb87f7c45.svg#DINSchrift")
+      format("svg");
+}
+
+[class*="font"][class*="-Din"] {
+  font-family: Din;
+}

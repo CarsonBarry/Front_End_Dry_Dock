@@ -1,0 +1,200 @@
+/*| == FLEXBOX FRAMEWORK ============================ |*/
+/* | Defaults -------------------------------------- | */
+
+/* | - Containers -------------------------------- | */
+
+[class*="flex"],
+.flex,
+.row,
+.column {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex: auto;
+  width: 100%;
+  height: auto;
+}
+
+/* 
+|	Default Property Values:
+|	flex-flow: row nowrap;
+|	justify-content: flex-start;
+|	align-content:	stretch;
+|	align-items: stretch;
+*/
+
+/* | - Items --------------------------------------- | */
+
+.fitem {
+  flex: auto;
+  order: 0;
+}
+
+/* | Flex-Flow Variants for Containers --------------- | */
+
+/*| (Default) ----------- |*/
+/* .flex ^^ Already up there */
+
+/*| Flex Direction - Row (Default) ----------- |*/
+[class*="flex"][class*="-R"],
+.row {
+  flex-direction: row;
+}
+
+/*| Flex Direction - Row Reverse ----------- |*/
+[class*="flex"][class*="-RR"] {
+  flex-direction: row-reverse;
+}
+
+/*| Flex Direction - Column ----------- |*/
+[class*="flex"][class*="-C"],
+.column {
+  flex-direction: column;
+}
+
+/*| Flex Direction - Column Reverse ----------- |*/
+[class*="flex"][class*="-CR"] {
+  flex-direction: column-reverse;
+}
+
+/*| Flex Wrap - No Wrap (Default) ----------- |*/
+[class*="flex"][class*="-NW"] {
+  flex-wrap: nowrap;
+}
+
+/*| Flex Wrap - Wrap ----------- |*/
+[class*="flex"][class*="-W"],
+.wrap {
+  flex-wrap: wrap;
+}
+
+/*| Flex Wrap - Wrap Reverse ----------- |*/
+[class*="flex"][class*="-WR"] {
+  flex-wrap: wrap-reverse;
+}
+
+/* | Alignment/Justification Variants for Containers - | */
+
+/*| (Default) ----------- |*/
+.flex {
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
+}
+
+/*| Justify Content - Flex Start (Default) ----------- |*/
+[class*="flex"][class*="-j"] {
+  justify-content: flex-start;
+}
+
+/*| Justify Content - Flex End ----------------------- |*/
+[class*="flex"][class*="-jE"] {
+  justify-content: flex-end;
+}
+
+/*| Justify Content - Center ------------------------- |*/
+[class*="flex"][class*="-jC"] {
+  justify-content: center;
+}
+
+/*| Justify Content - Space Between ------------------ |*/
+[class*="flex"][class*="-jSB"] {
+  justify-content: space-between;
+}
+
+/*| Justify Content - Space Around ------------------- |*/
+[class*="flex"][class*="-jSA"] {
+  justify-content: space-around;
+}
+
+/*| Justify Content - Space Evenly ------------------- |*/
+[class*="flex"][class*="-jSE"] {
+  justify-content: space-evenly;
+}
+
+/*| Align Content - Stretch (Default) ---------------- |*/
+[class*="flex"][class*="-ac"] {
+  align-content: stretch;
+}
+
+/*| Align Content - Flex Start ----------------------- |*/
+[class*="flex"][class*="-acS"] {
+  align-content: flex-start;
+}
+
+/*| Align Content - Flex End ------------------------- |*/
+[class*="flex"][class*="-acE"] {
+  align-content: flex-end;
+}
+
+/*| Align Content - Center --------------------------- |*/
+[class*="flex"][class*="-acC"] {
+  align-content: center;
+}
+
+/*| Align Content - Space Between -------------------- |*/
+[class*="flex"][class*="-acSB"] {
+  align-content: space-between;
+}
+
+/*| Align Content - Space Evenly --------------------- |*/
+[class*="flex"][class*="-acSE"] {
+  align-content: space-evenly;
+}
+
+/*| Align Items - Stretch (Default) ------------------ |*/
+[class*="flex"][class*="-ai"] {
+  align-items: stretch;
+}
+
+/*| Align Items - Flex Start ------------------------- |*/
+[class*="flex"][class*="-aiS"] {
+  align-items: flex-start;
+}
+
+/*| Align Items - Flex End --------------------------- |*/
+[class*="flex"][class*="-aiE"] {
+  align-items: flex-end;
+}
+
+/*| Align Items - Center ----------------------------- |*/
+[class*="flex"][class*="-aiC"] {
+  align-items: center;
+}
+
+/*| Align Items - Baseline --------------------------- |*/
+[class*="flex"][class*="-aiB"] {
+  align-items: baseline;
+}
+/*| Align Self - Flex Start --------------------------- |*/
+[class*="flex"][class*="-asS"] {
+  align-items: flex-start;
+}
+
+/*| Align Items - Flex End --------------------------- |*/
+[class*="flex"][class*="-asE"] {
+  align-items: flex-end;
+}
+
+/*| Align Items - Center --------------------------- |*/
+[class*="flex"][class*="-asC"] {
+  align-items: center;
+}
+
+/*| Align Items - Baseline --------------------------- |*/
+[class*="flex"][class*="-asB"] {
+  align-items: baseline;
+}
+
+/* | Alignment Variants for Items -------------------- | */
+
+/*| Align Items - Baseline --------------------------- |*/
+[class*="flex"][class*="-aiB"] {
+  align-items: baseline;
+}
+
+/* | Grow/Shrink/Basis Variants for Items ------------ | */
+
+/*empty*/
