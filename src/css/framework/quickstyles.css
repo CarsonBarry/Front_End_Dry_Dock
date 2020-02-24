@@ -1,4 +1,4 @@
-/* Borders */
+/*/ Borders /*/
 [class*="border"] {
   border-style: solid;
   border-width: 2px;
@@ -53,7 +53,7 @@
   border-color: rgb(26 26 26);
 }
 
-/* Background Colors */
+/*/ Background Colors /*/
 [class*="bcolor-red"] {
   background: red;
 }
@@ -96,7 +96,7 @@
 [class*="bcolor-grey90"] {
   background: rgb(26 26 26);
 }
-/* Text Colors */
+/*/ Text Colors /*/
 [class*="tcolor-red"] {
   color: red;
 }
@@ -142,7 +142,7 @@
 
 
 
-/* Fill Colors */
+/*/ Fill Colors /*/
 [class*="fcolor-red"] {
   fill: red;
 }
@@ -186,9 +186,9 @@
   fill: rgb(26 26 26);
 }
 
-/* TEXT */
+/*/ TEXT /*/
 
-/*| ---- Alignment -------------------------------- |*/
+/*/ Alignment /*/
 [class*="text"][class*="-alignL"] {
   text-align: left;
 }
@@ -202,7 +202,7 @@
   text-align: justify;
 }
 
-/*| ---- Styling -------------------------------- |*/
+/*/ Styling /*/
 [class*="text"][class*="-italic"] {
   font-style: italic;
 }
@@ -213,7 +213,7 @@
   font-style: underline;
 }
 
-/*| ---- Text Colors -------------------------------- |*/
+/*/ Text Colors /*/
 .text-red {
   color: red;
 }

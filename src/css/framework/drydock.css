@@ -1,0 +1,19 @@
+#drydockframe {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template:
+    [r1s] "DockPanels" 30px [r1e]  /*/ [LineName] "GridArea ..." TrackSize [LineName] /*/
+    [r2s] "WebPage" 1fr [r2e]  
+    / 100vw;  /*/ TrackSize ... /*/
+}
+
+.drydockpanel {
+  flex-wrap: wrap;
+}
+
+.drydockbutton {
+  flex: auto;
+  height: 30px;
+  display: flexbox;
+}
