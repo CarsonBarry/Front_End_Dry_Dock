@@ -27,7 +27,7 @@
 }
 
 #splash.sidebar.condensed{
-
+  width: 10vw;
 }
 
 #content {
@@ -43,10 +43,60 @@
 
 }
 
+#content.active.expanded {
+  width: 90vw;
+}
 
+#navbar {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  
+  transition: height 1s ease;
+  transition: width 1s ease;
+}
 
+#navbar.active{
+  place-self: center;
+  width: 100%;
+  height: 100%;
+}
 
+#navbar.sidebar{
+  grid-area: a3 / a3 / a4 / a4;
+  place-self: center;
+  flex-direction: column;
+}
 
+#navbar button {
+  background: transparent;
+  color:white;
+  font-family:inherit;
+}
+
+#navbar.sidebar button:first-child{
+  margin-top: 1.5em;
+}
+
+#mugshotplaceholder {
+  grid-area: a1 / a1 / a2 / a2;
+  background: grey;
+  height: 0px;
+  width: 80px;
+  place-self: end center;
+  margin-bottom: 20px;
+  
+  transition: height 1s ease;
+  transition: width 1s ease;
+}
+
+#mugshotplaceholder.active {
+  height: 120px;
+}
+
+#mugshotplaceholder.condensed {
+  width: 0;
+}
 
 
 

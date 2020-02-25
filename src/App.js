@@ -18,6 +18,8 @@ export default function App() {
     splashToSidebar();
     contentDrawer();
     footerDrawer();
+    mugshotDrawer();
+    navbarToSidebar();
   }
 
   /*/ Condenses splash screen to sidebar /*/
@@ -41,6 +43,34 @@ export default function App() {
     toggle.classList.toggle("active");
   }
 
+  /*/ Opens and closes Drawer /*/
+  function mugshotDrawer() {
+    /*/ Targets and toggles .active on #drawer /*/
+    var toggle = document.getElementById("mugshotplaceholder");
+    toggle.classList.toggle("active");
+  }
+
+  /*/ Places Navbar content in Sidebar Area/*/
+  function navbarToSidebar() {
+    /*/ Targets and toggles .active/.hidden/.sidebar on #drawer /*/
+    var toggle = document.getElementById("navbar");
+    toggle.classList.toggle("active");
+    toggle.classList.toggle("sidebar");
+  }
+
+  /*/ Condenses the Sidebar further /*/
+  function condenseSidebar() {
+    var splash = document.getElementById("splash");
+    var mug = document.getElementById("mugshotplaceholder");
+    splash.classList.toggle("condensed");
+    mug.classList.toggle("condensed");
+
+    
+    var content = document.getElementById("content");
+    content.classList.toggle("expanded");
+    /*/  /*/
+  }
+
   function test() {
     /*/ Targets and toggles .active on  /*/
     var toggle = document.getElementById("elementID");
@@ -62,14 +92,14 @@ export default function App() {
         <button class="drydockbutton" onClick={openSite}>
           Open Site
         </button>
-        <button class="drydockbutton" onClick={test}>
-          Test
+        <button class="drydockbutton" onClick={mugshotDrawer}>
+          Mugshot
         </button>
-        <button class="drydockbutton" onClick={test}>
-          Test
+        <button class="drydockbutton" onClick={navbarToSidebar}>
+          SideNav
         </button>
-        <button class="drydockbutton" onClick={test}>
-          Test
+        <button class="drydockbutton" onClick={condenseSidebar}>
+          Condense Sidebar
         </button>
         <button class="drydockbutton" onClick={test}>
           Test
@@ -81,6 +111,14 @@ export default function App() {
         {/*/ Grid Item - Splash Screen /*/}
         <div id="splash" class="bcolor-grey90 tcolor-white flex-jC-aiC">
           <h1>Splash</h1>
+        </div>
+
+        <div id="mugshotplaceholder" />
+
+        <div id="navbar" class=" flex-R-W-jS-aiC">
+          <button class="navbutton">Home</button>
+          <button class="navbutton">About</button>
+          <button class="navbutton">Content</button>
         </div>
 
         {/*/ Grid Item - Content Area /*/}
