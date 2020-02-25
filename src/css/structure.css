@@ -19,6 +19,7 @@
 #splash{
   grid-area: a1 / a1 / a4 / a4;
   width: 100vw;
+  transition: width 1s ease;
 }
 
 #splash.sidebar{
@@ -34,6 +35,7 @@
   width: 0px;
   overflow: hidden;
   transition: width 1s ease;
+  justify-self: end;
 }
 
 #content.active {
